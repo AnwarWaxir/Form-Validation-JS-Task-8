@@ -1,0 +1,151 @@
+:root {
+    --indigo: #6610f2;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --gray: #e9ecef;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --teal: #20c997;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition:all 0.5s ease;
+}
+
+body{
+    background-color: var(--gray);
+    font-family: Ubuntu, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form
+{
+    padding: 25px;
+    background-color: white;
+    width: calc(100% - 60%);
+}
+
+@media(max-width: 900px){
+    form{
+        width: calc(100% - 40%);
+    }
+}
+
+form:hover
+{
+    box-shadow: 0 0 20px var(--indigo);
+}
+
+.form-caption
+{
+    background-color: var(--indigo);
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+form .form-group
+{
+    margin-top: 10px;
+    position: relative;
+}
+
+form .form-group input,
+form .form-group select,
+form .form-group textarea
+{
+    border: 2px solid var(--gray);
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+    font-family: Ubuntu, sans-serif;
+}
+
+form .form-group i
+{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+form .form-group small 
+{
+    display: inline-block;
+    margin-top: 5px;
+    color: var(--red);
+    display: none;
+}
+
+form .form-group .fa-circle-info
+{
+    color: var(--red);
+    display: none;
+}
+
+form .form-group .fa-circle-check
+{
+    color: var(--teal);
+    display: none;
+}
+
+form .form-group.error .fa-circle-info
+{
+    display: block;
+}
+
+form .form-group.error small
+{
+    display: inline-block;
+}
+
+form .form-group.error input,
+form .form-group.error select,
+form .form-group.error textarea
+{
+    border: 1px solid var(--red);
+}
+
+form .form-group.success .fa-circle-check
+{
+    display: block;
+}
+
+form .form-group.success input,
+form .form-group.success select,
+form .form-group.success textarea
+{
+    border: 1px solid var(--teal);
+}
+
+form .form-btn
+{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+form .form-btn button
+{
+    padding: 8px 15px;
+    outline: none;
+    background-color: var(--indigo);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+form .form-btn button:hover
+{
+    box-shadow: 3px 3px 0 var(--pink);
+}
+
