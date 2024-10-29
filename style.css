@@ -70,11 +70,12 @@ form .form-group textarea
     font-family: Ubuntu, sans-serif;
 }
 
-form .form-group i
+form .form-group img
 {
     position: absolute;
     top: 8px;
     right: 10px;
+    width: 12px;
 }
 
 form .form-group small 
@@ -87,13 +88,13 @@ form .form-group small
 
 form .form-group .fa-circle-info
 {
-    color: var(--red);
+    filter: invert(25%) sepia(85%) saturate(2268%) hue-rotate(337deg) brightness(92%) contrast(87%);;
     display: none;
 }
 
 form .form-group .fa-circle-check
 {
-    color: var(--teal);
+    filter: invert(58%) sepia(92%) saturate(382%) hue-rotate(111deg) brightness(94%) contrast(85%);
     display: none;
 }
 
